@@ -79,3 +79,13 @@ function compareTab($tab1, $tab2){
 	echo "Sur les ".$nbParcour." vérifiée(s), ".$compteur." sont identique(s)<br/>";
 	return $compteur;
 }
+
+
+/**
+ * Fonction permettant d'activer les logs d'erreur sur les pages PHP quand j'ai la flemme de modifier le php.ini
+ */
+function setErrorLogToTrue(){
+	ini_set('display_errors', 1);
+	ini_set('display_startup_errors', 1);
+	error_reporting(E_ALL);
+}
