@@ -1,4 +1,4 @@
-/*axios.get('./services/getAllMateriel.php')
+axios.get('./services/getAllMateriel.php')
   .then(function (response) {
     // handle success
     console.log(response);
@@ -9,7 +9,7 @@
   })
   .then(function () {
     // always executed
-  });*/
+  });
 
   axios({
   method: 'post',

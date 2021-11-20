@@ -13,22 +13,10 @@ Les emprunts et restitution seront réaliser au travers d'un autre projet ==>
 - L'utilisateur peux lister le materiel
 
 
-## Schemas relationnel
+#RoadMap
 
-User
-- user_id 
-- login (email)
-- password
-- last_connection_date
-- last_connection_ip
+##WEB Interface
 
-Materiel
-- materiel_id
-- denomination
-- status_id (FK)
-
-Status
-- status_id 
-- label
-
-Emprunts
+- Developper le service de suppression
+- Developper le service de mise à jour
+- Concevoir une IHM One Page App pour l'ensemble des features (On va tester Figma)
