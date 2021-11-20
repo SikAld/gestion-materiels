@@ -1,19 +1,19 @@
 <?php
 
 //Permet l'ouverture d'une connexion à une base de données
-fucntion getMysqlConnect(){
+function getMysqlConnect(){
   $connection = NULL;
 	try
 	{
 		$cfg = parse_ini_file("myLib-config.ini", true);
 		$mode = $cfg['mode']['actual_mode'];
 
-		$host = $cfg['myslq_cfg_'.$mode]['host'];
-		$user = $cfg['myslq_cfg_'.$mode]['user'];
-		$pass = $cfg['myslq_cfg_'.$mode]['pass'];
-		$dbname = $cfg['myslq_cfg_'.$mode]['dbname'];
+		$host = $cfg['mysql_cfg_'.$mode]['host'];
+		$user = $cfg['mysql_cfg_'.$mode]['user'];
+		$pass = $cfg['mysql_cfg_'.$mode]['pass'];
+		$dbname = $cfg['mysql_cfg_'.$mode]['dbname'];
 
-		$connection = new PDO('mysql:host='.$hoste.';dbname='.$dbname.';charset=utf8mb4', $user, $pass);
+		$connection = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8mb4', $user, $pass);
 	}
 	catch (Exception $e){
 		die('Erreur : ' . $e->getMessage());
@@ -22,7 +22,7 @@ fucntion getMysqlConnect(){
 }
 
 
-fucntion execQuery($connection, $sqlString){
+function execQuery($connection, $sqlString){
 	return $connection->query($sqlString);
 }
 

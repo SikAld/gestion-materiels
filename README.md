@@ -13,3 +13,22 @@ Les emprunts et restitution seront réaliser au travers d'un autre projet ==>
 - L'utilisateur peux lister le materiel
 
 
+## Schemas relationnel
+
+User
+- user_id 
+- login (email)
+- password
+- last_connection_date
+- last_connection_ip
+
+Materiel
+- materiel_id
+- denomination
+- status_id (FK)
+
+Status
+- status_id 
+- label
+
+Emprunts
