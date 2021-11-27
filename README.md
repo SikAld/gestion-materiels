@@ -17,6 +17,7 @@ Les emprunts et restitution seront réaliser au travers d'un autre projet ==>
 
 ##WEB Interface
 
-- Developper le service de suppression
-- Developper le service de mise à jour
-- Concevoir une IHM One Page App pour l'ensemble des features (On va tester Figma)
+- ANO : le centrage du titre n'est pas bon
+- Ajouter un bouton de suppression
+- Créer un formulaire d'ajout (pop-up)
+- REVOIR LE WEB DESIGN
