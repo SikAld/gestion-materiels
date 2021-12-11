@@ -1,6 +1,7 @@
+const baseUrl = "http://localhost:1234/api/";
 
 const getAll = () =>{
-  axios.get('./services/getAllMateriel.php')
+  axios.get(baseUrl+'materiel')
   .then(function (response) {
     // handle success
     var content = "";

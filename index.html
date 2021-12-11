@@ -5,32 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion materiels</title>
-    <link rel="stylesheet" type="text/css" href="./libs/bootstrap/css/bootstrap.min.css"/>
+
     <link rel="stylesheet" type="text/css" href="./css/gestion-mat.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark-blue">
-        <div id="img-title" class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Gestion matériels
-          </a>
-        </div>
-      </nav>
+  <app-nav></app-nav>
+  <app-list-item></app-list-item>
 
-      <div class="container-fluid">
 
-        <div class="item-box">
-            <ul id="materiel-list" class="list-group">
-            </ul>
-        </div>
-
-      </div>
-
+  <!-- ADDING LIBRARIES -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
     
+  <!-- COMPONENT-->
+  <script src="./js/components/app-nav.jsx" type="text/babel"></script>
+  <script src="./js/components/app-list-item.jsx" type="text/babel"></script>
 
-    <script src="./libs/bootstrap/js/bootstrap.bundle.js"/></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
-    <script src="./js/app.js"></script>
-    
+
+  <!-- DYNAMIC FUNCTION-->
+  <script src="./js/app.js" defer></script>
+
 </body>
 </html>
